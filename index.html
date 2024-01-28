@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+</head>
+
+    <body>
+        <h1>Hi guys!!</h1>
+    
+        <form  method="post" action="calculate">
+            {% csrf_token %}
+            <label for="inp">Enter a number or a string :</label>
+            <input  id="inp" name="inp" required>
+    
+            <button type="submit"class ="btn btn-primary"name="operation" value="factorial">Calculate Factorial</button>
+            <button type="submit"class ="btn btn-primary" name="operation" value="reverse">Calculate Reverse</button>
+            
+            
+
+        </form>
+    
+    </body>
+    </html>
+   
